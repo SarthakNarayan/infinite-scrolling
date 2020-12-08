@@ -1,0 +1,1 @@
+This is an example of inifite scrolling using react, apollo-client(v3) and graphql by implementing cursor based pagination. Custom graphql server is used.

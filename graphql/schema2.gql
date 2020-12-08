@@ -1,0 +1,17 @@
+type comments {
+  id: ID
+  author: String
+  text: String
+}
+
+type MoreComments {
+  cursor: ID!
+  # comments: comments
+  comments: [comments]
+}
+
+type Query {
+  # moreComments(cursor: String, limit: Int!): [Combined]
+  moreComments(cursor: String, limit: Int!): MoreComments
+  # moreComments(cursor: String, limit: Int!): [comments]
+}
